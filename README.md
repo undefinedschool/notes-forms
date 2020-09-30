@@ -15,6 +15,7 @@
 
 - setear el atributo `action` del form para decir a dónde queremos enviar los datos (URL).
 - setear el atributo `name` del input para identificar los datos que enviamos en el form.
+  - ⚠️ los valores del atributo `name` deben respetar los nombres de parámetros esperados por la API que estemos usando, sino va a fallar el submit.
 
 ```html
 <form action="http://www.google.com/search" method="get">
@@ -33,8 +34,8 @@
 - setear `label` e `input` asociado siempre en el mismo orden, para ser consistentes (y chequear que los atributos `id` y `for` coincidan).
 - setear el atributo `required` para los campos que sean obligatorios (`<input required .../>`)
 - elegir el tipo de input más apropiado en cada caso, también suma a la accesibilidad/ux.
-- si usamos el método `get` para el formulario, los datos de los inputs van a quedar expuestos en la URL. Suele utlizarse para búsquedas.
-- si vamos a _enviar_ datos (sobre todo datos sensibles), setear el atributo `method` del form como `post`. De esta forma, los datos se agregan al `body` del request y no se muestran en la URL (ej: passwords).
+- ⚠️ si usamos el método `get` para el formulario, los datos de los inputs van a quedar expuestos en la URL. Suele utlizarse para búsquedas.
+- ⚠️ si vamos a _enviar_ datos (sobre todo datos sensibles), setear el atributo `method` del form como `post`. De esta forma, los datos se agregan al `body` del request y no se muestran en la URL (ej: passwords).
 
 ```html
 <form action="https://google.com" method="post">
