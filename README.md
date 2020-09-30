@@ -33,6 +33,7 @@
 - es muy recomendable **hacer un wireframe del form antes de empezar a codearlo**, al menos una versión _lo-fi_.
 - setear `label` e `input` asociado siempre en el mismo orden, para ser consistentes (y chequear que los atributos `id` y `for` coincidan).
 - setear el atributo `required` para los campos que sean obligatorios (`<input required .../>`)
+- si el input espera un mail, usar el type `email`.
 - elegir el tipo de input más apropiado en cada caso, también suma a la accesibilidad/ux.
 - ⚠️ si usamos el método `get` para el formulario, los datos de los inputs van a quedar expuestos en la URL. Suele utlizarse para búsquedas.
 - ⚠️ si vamos a _enviar_ datos (sobre todo datos sensibles), setear el atributo `method` del form como `post`. De esta forma, los datos se agregan al `body` del request y no se muestran en la URL (ej: passwords).
