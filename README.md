@@ -4,7 +4,7 @@
 - `<input />` no tiene tag de cierre.
 - usamos el atributo `type` para determinar el [tipo de campo](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input), según el contenido y formato.
 - podemos usar `input`s de forma independiente (si sólo nos interesa leer sus valores), pero si es información que queremos enviar/pedir de algún lado, necesitamos agruparlos dentro de un `form`.
-- un `form` funciona como un _container_ de inputs.
+- un `form` funciona como un _container_ de inputs, para enviar/requerir ciertos datos, en un único request.
 - los formularios nos sirven para recolectar input.
 - asociar las `label`s correspondientes a cada input:
 
